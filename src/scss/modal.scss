@@ -1,0 +1,7 @@
+@import "./global.scss";
+.modal-content {
+    @include flexElement(flex,center,center,column);
+    input{
+        width:100%;
+    }
+}

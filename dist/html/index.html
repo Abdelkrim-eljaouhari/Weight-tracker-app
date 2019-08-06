@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <!--<link rel="stylesheet" href="/node_modules/@fortawesome/css/all.min.css">-->
+    <title>Document</title>
+</head>
+<body>
+       <div class="container">
+            <div class="main_page_container">
+                    <h1>Weight tracker app</h1>
+                <div class="asideSection_box">
+                    <section class="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="../../src/html/history.html">History</a></li>
+                            <li><a href="../../src/html/actualweight.html">Actual weight</a></li>
+                            <li><a href="../../src/html/weightcomparison.html">Weight comparison</a></li>
+                            <li><a href="../../src/html/chart.html">Plot a chart</a></li>
+                        </ul>
+                    </section>
+                    <aside>
+                        <div class="inner_aside_container">
+                          <div class="center_circle">
+                            
+                          </div>
+                        </div>
+                        <button id="actualWeight" class="aside_btn btn btn-dark" data-toggle="modal" data-target="#exampleModal">Actual weight</button>
+                    </aside>
+                </div>
+            </div>
+       </div>
+
+       <!--Bootstrap modal-->
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+      <h3>Add your weright</h3>
+        </div>
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-balance-scale-right"></i></span>
+        </div>
+        <input type="number"  min="0" max="200" class="form-control" placeholder="Your weight" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <input type="date" id="theDate"> 
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"  data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="../bundle.js"></script>
+</body>
+</html>

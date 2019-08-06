@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito Sans', sans-serif;  
+    background: linear-gradient(16deg, #0040854a, transparent);
+}
+.container{
+    height:100vh;
+}
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+h1 {
+    font-family: 'Saira Stencil One', cursive;
+    color:#6192a2;
+}
+/* Mixins */
+
+@mixin flexElement($display,$justification,$alignement,$direction){
+    display:$display;
+    justify-content: $justification;
+    align-items: $alignement;
+    flex-direction:$direction;
+}
+@mixin transform(){
+    transform: translate(-50%, -50%);
+    transition:$HoverTransition;
+}
+/* Colors */
+$edgeBorder:#00000061;
+/* Border */
+$onePixelB:1px solid $edgeBorder;
+$bRaidusFive:5px;

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swa");
+@import "./global.scss"; 
+/*main page colors*/
+$sectionColor:#e0e0e0;
+$linkHoverColor:lightblue;
+$HoverTransition:all .2s linear;
+.main_page_container {
+    height:100%;
+    @include flexElement(flex,center,center,column);
+
+    /*-- asideSection_box --*/
+    .asideSection_box {
+        border-radius:$bRaidusFive;
+        max-width:900px;
+        width:90%;
+        height:420px;
+        box-shadow: 2px 2px 2px black;
+        overflow: hidden;
+        @include flexElement(flex,none,none,row);
+        /*-- section --*/
+
+        section{
+            width:60%;
+            height:100%;
+            border-right:1px solid $edgeBorder;
+            h2 {
+                padding:20px 0px;
+                text-align: center;
+                border-bottom: 1px solid $edgeBorder;
+                margin:0;
+                background-image: linear-gradient(#721c242e, #762228ad, #e0c78c);
+                font-family: 'Saira Stencil One', cursive;
+                color:blue;
+            }
+            ul li {
+                padding:30px;
+                border-bottom: 1px solid $edgeBorder;
+                background-image: linear-gradient(to right, #721c24, #ffc10761);
+                &:last-of-type{
+                    border-bottom:none;
+                }
+                a{ 
+                    color:white;
+                    background-color: #00000017;
+                    padding:10px 10px;
+                    border-radius:$bRaidusFive;
+                    text-decoration: none;
+                    transition:$HoverTransition;
+                    &:hover {
+                        color:white;
+                        font-weight:bold;
+                    }
+                }
+            }
+        }
+
+        /*-- aside --*/
+
+        aside {
+            .inner_aside_container {
+                background:url("/dist/health.jpg")  center no-repeat ;
+                height:100%;
+                background-size: cover;
+                transition:all .8s ease-in;
+                &:hover {
+                    transform: scale(1.2,1.2) rotate(-20deg);
+                }
+            }
+            width:40%; 
+           position:relative;
+           overflow: hidden;
+           
+           .center_circle {
+               background-color:#0040854d;
+               position:absolute;
+               border-radius: 50%;
+               width: 0%;
+                height:0;
+                padding-bottom: 0%;
+               top: 50%;
+               left: 50%;
+               @include transform();
+
+           }
+           .aside_btn {
+            position:absolute;
+            top:110%;
+            left:50%;
+            text-shadow:2px 2px 2px blue;
+            @include transform();
+        }
+           &:hover .center_circle {
+            padding-bottom: 200%;
+            width: 200%;
+            }
+            &:hover .aside_btn{
+                top:50%;
+            }
+            
+            
+        }
+    }
+}
