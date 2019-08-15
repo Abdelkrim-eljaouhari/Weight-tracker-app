@@ -1,0 +1,9 @@
+@import "./global.scss"; 
+.history_wrappper {
+    height:100%;
+    @include flexElement(flex,center,center,column);
+    table {
+       width:80%; 
+       min-width:580px;
+    }
+}

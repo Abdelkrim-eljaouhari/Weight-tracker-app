@@ -17,6 +17,10 @@ h1 {
     font-family: 'Saira Stencil One', cursive;
     color:#6192a2;
 }
+#emptyfield{
+    position:absolute;
+    padding:0;
+}
 /* Mixins */
 
 @mixin flexElement($display,$justification,$alignement,$direction){
