@@ -4,6 +4,23 @@
     @include flexElement(flex,center,center,column);
     table {
        width:80%; 
-       min-width:580px;
+       min-width:580px; 
+       tbody{
+           td:last-child{
+            position: relative;
+            i{
+    color: #14c314;
+    font-size: 28px;
+    position: absolute;
+    top: 10;
+    top: 15px;
+    margin-left: 16px;
+    cursor:pointer;
+    &:hover{
+        color:brown;
+    }
+            }
+           }
+       }
     }
 }

@@ -1,0 +1,40 @@
+@import "./global.scss"; 
+
+.actualweight > div {
+    @include flexElement(flex,center,center,column);
+    .weightWrapper {
+        width:600px;
+        height:200px;
+        @include flexElement(flex,none,none,row);
+        .yourWeight {
+            background-color:#6192a2;
+            border-radius: 10px;
+            @include flexElement(flex,center,center,row);
+            h2{
+                text-shadow: 2px 2px 2px black;
+                span {
+                    color:black;
+                }
+            }
+        }
+        .column{
+            width:50%;
+        }
+        .colorLabel{
+            width:50px;
+            padding:10px;
+            margin: 0px 10px;
+            display:inline-block;
+            border:1px solid black;
+        }
+        .danger{
+            background: red;
+        }
+        .good{
+            background: green;
+        }
+        .ngood{
+            background:yellow;
+        }
+    }
+}

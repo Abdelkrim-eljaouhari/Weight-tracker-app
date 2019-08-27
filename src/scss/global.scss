@@ -21,6 +21,13 @@ h1 {
     position:absolute;
     padding:0;
 }
+/* display pages */
+.page {
+    display:none;
+}
+.active {
+    display:block;
+}
 /* Mixins */
 
 @mixin flexElement($display,$justification,$alignement,$direction){
